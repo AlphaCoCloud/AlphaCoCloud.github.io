@@ -1,178 +1,359 @@
-<html>
+<!DOCTYPE html>
+<html lang="fa">
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="author" content="PooyaEimandar" />
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="الماس فناوری ابری پاسارگاد(آلفا)">
+  <!-- Facebook meta tags -->
+  <meta property="og:url" content="https://alphaco.cloud">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="آلفا">
+  <meta property="og:description" content="الماس فناوری ابری پاسارگاد(آلفا)">
+  <meta property="og:image" content="img/wolf-banner.png">
+  <!-- Twitter meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="alphaco.cloud">
+  <meta property="twitter:url" content="https://alphaco.cloud">
+  <meta name="twitter:title" content="آلفا">
+  <meta name="twitter:description" content="الماس فناوری ابری پاسارگاد(آلفا)">
+  <meta name="twitter:image" content="img/wolf-banner.png">
   <meta name="keywords"
-    content="playpod, wolfengine, cloud gaming, cloud streaming, falcon, metaverse" />
-  <link rel="icon" type="image/png" href="res/img/favicon/favicon.ico">
-  <link
-    href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i"
-    rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/video-js.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/video-js-skin.css" type="text/css" />
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
-  <link rel="stylesheet" href="css/style.theme.css" type="text/css" />
-  <link rel="stylesheet" href="css/animation.css" type="text/css" />
-  <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-  <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
-
-  <script type="application/javascript" src="lib/jquery-2.1.1.js"></script>
-  <script type="application/javascript" src="lib/bootstrap.rtl.min.js"></script>
-  <script type="application/javascript" src="lib/swiper.min.js"></script>
-  <script type="application/javascript" src="lib/videojs.js"></script>
-  <script type="application/javascript" src="lib/gamepad.js"></script>
-  <script type="application/javascript" src="lib/jquery.scrollTo.min.js"></script>
-  <script type="application/javascript" src="src/share/Util.js"></script>
-  <script type="application/javascript" src="src/share/Const.js"></script>
-  <script type="application/javascript" src="src/stream/Stream.js"></script>
-  <script type="application/javascript" src="src/App.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Welcome to Alpha</title>
+    content="آلفا،الماس فناوری ابری پاسارگاد،الماس فناوری ابری پاسارگاد(آلفا)،شرکت دانش بنیان آلفا،متاورس،آلفاورس،فالکن،کلادگیمینگ،گلاودگیمینگ،پلی پاد، کنسول بازی ابری،سرویس بازی ابری،دوقلو دیجیتال" />
+  <link href="img/favicon.ico" rel="icon" sizes="any">
+  <title>آلفا</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.11.1/video-js.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="gc-noselect">
+<body data-page-direction="rtl">
+  <header class="header-section container-fluid">
+    <nav class="navbar ">
+      <div class="navbar-container container">
+        <button class="btn  d-block d-md-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <img class="navbar-toggler-img" src="img/hamburger menu icon.svg" alt="" />
+        </button>
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" data-bs-backdrop="false" tabindex="-1"
+          id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header ">
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <ul class="navbar-nav in-sidebar">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">سرویس ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutUs">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">تماس</a>
+            </li>
+          </ul>
+        </div>
 
-  <div class="gc-refresh-content gc-pointer">
-    <i class="icon icon-refresh"></i>
-  </div>
+        <!-- Navbar brand -->
+        <a onclick="todo()" class="navbar-brand" href="#">
+          <img src="img/logo2.svg" alt="Alpha Logo" loading="lazy" />
+        </a>
 
-  <div class="gc-main-container">
-    <div class="gc-content">
-      <div class="gc-intro-video-content">
-        <div class="gc-overlay"></div>
-        <video autoplay muted playsinline>
-          <source src="./res/mov/landscape.mp4" type="video/mp4">
+        <!-- Left links -->
+        <!-- Collapsible wrapper -->
+
+        <div class="d-none d-md-flex m-auto">
+          <ul class="navbar-nav in-header flex-row ">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">سرویس ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutUs">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">تماس</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="banner-section container" id="banner-section">
+      <script src="js/preload.js"></script>
+      <div class="banner-main-title">Alpha Co.</div>
+      <h4 class="banner-sub-title">عصر جدید فناوری</h2>
+        <video class="banner-video video-js" id="wolf" fluid="true" preload="auto" autoplay="play" muted="muted"
+          data-setup="{}">
+          <source src="video/wolf.mp4" type="video/mp4" />
         </video>
-        <img class="gc-background" src="">
+        <div class="banner-mouse">
+          <img src="img/mouse-gif.gif" alt="">
+        </div>
+    </div>
+
+    <div class="compony-section" id="aboutUs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 d-none d-lg-block"></div>
+          <div class="col-lg-5 col-sm-6 col-12 compony-text">
+            شرکت فناور آلفا یک شرکت دانش بنیان سطح یک است که به عنوان یکی از شرکت‌های پیشرو در صنایع دیجیتال کشور شناخته
+            می‌شود. با وجود چالش‌های مختلف در مسیر خود، آلفا همواره تلاش کرده است تا مهمترین هدف خود یعنی نهادینه کردن
+            ابزارهای نوین و هوشمند فن‌آورانه در کسب‌وکارهای دیجیتال را تحقق بخشد. این شرکت با تکیه بر فناوری ابری در
+            حوزه‌های مختلف صنعت دیجیتال از سرویس بازی ابری تا متاورس صنعتی با تمرکز در حوزه سرویس‌های زیرساختی GPU
+            Farming و GPU Partitioning مشغول به کار است.
+          </div>
+          <div class="col-1 "></div>
+          <div class="col-lg-4 col-sm-5 col-12 compony-logo">
+            <img src="img/logo-brand.svg" alt="">
+          </div>
+          <div class="col-lg-1 d-none d-lg-block"></div>
+        </div>
+
       </div>
-      <div class="gc-tab-contents">
-        <section class="gc-tab-content gc-active gc-intro-section">
-          <div class="gc-inner-content">
-            <h2 class="gc-title">ALPHA</h2>
-            <p class="gc-description">
-              Alpha is passionate about real-time rendering, GPU partitioning, XR and cloud gaming. We are the parent
-              company of <b>PlayPod</b> which is the first cloud gaming platform in the Middle East.
-            </p>
-          </div>
-        </section>
-        <section class="gc-tab-content gc-cloudgaming-section">
-          <div class="gc-inner-content">
-            <div class="gc-header">PlayPod</div>
-            <div class="gc-content">
-              <div class="gc-iframe-content"></div>
-            </div>
-            <div class="gc-footer">
-              <p>Play limitless on the clouds! We are revolutionizing the way games are played</p>
-              <p>Try it on<a href="https://PlayPod.ir/" target="_blank"> PlayPod</a></p>
-            </div>
-          </div>
-        </section>
-        <section class="gc-tab-content gc-falcon-section">
-          <div class="gc-inner-content">
-            <div class="gc-header">Falcon</div>
-            <div class="gc-content">
-              <div class="gc-iframe-content"></div>
-            </div>
-            <div class="gc-footer">
-              <p>This is a 3D real-time simulation / monitoring system</p>
-              <p>powered by <a href="https://github.com/WolfSource/WolfEngine" target="_blank">WolfEngine</a></p>
-            </div>
-          </div>
-        </section>
+
+
+    </div>
+
+    <div class="alpha-section container" id="services">
+
+      <div class="row">
+        <div class="col-lg-1 d-none d-lg-block"></div>
+        <div class="col-lg-10 col-12 info-box">
+          <h6 class="info-box-head">دریچه‌ای نوین رو به دنیای دیجیتال! </h6>
+          <h2 class="info-box-bold">آلفاورس.<br> آینده از آن شماست.</h2>
+          <h5 class="info-box-info">شرکت آلفا با افتخار نسل جدیدی از سرویس های متاورسی را به کاربران معرفی کرده است.
+            آلفاورس
+            یک زیرساخت دیجیتالی متاورسی با محوریت واقعیت مجازی، واقعیت افزوده، کلاد رندرینگ و استریم امن بلادرنگ است که
+            در آن کاربران می‌توانند با استفاده از این زیرساخت به توسعه محصولات متاورسی و دوقلوی دیجیتال بپردازند.
+            بخش‌هایی از این دنیای مجازی به صورت دوقلوی دیجیتالی برگرفته از دنیای واقعی و بخش‌های دیگر به صورت مفهومی
+            طراحی و پیاده‌سازی شده‌اند. همچنین، فضای مورد نظر به صورت Cross Platform پردازش شده و مبتنی بر Cloud
+            Rendering است.</h5>
+        </div>
+        <div class="col-lg-1 d-none d-lg-block"></div>
       </div>
-      <div class="gc-tab">
-        <section gc-show-page="gc-cloudgaming-section" class="gc-tab-section gc-pointer">
-          <div class="gc-inner-content">
-            <div class="gc-image-content">
-              <img class="gc-icon" src="./res/img/cloud_game.svg">
-            </div>
-            <div class="gc-text-content">Cloud Gaming</div>
-          </div>
-        </section>
-        <section gc-show-page="gc-falcon-section" class="gc-tab-section gc-pointer">
-          <div class="gc-inner-content">
-            <div class="gc-image-content">
-              <img class="gc-icon" src="./res/img/falcon.svg">
-            </div>
-            <div class="gc-text-content">Falcon</div>
-          </div>
-        </section>
+
+      <div data-speed="0.1" class="row scroll-canvas scroll-metaverse-trigger">
+        <canvas id="scrollMetaverse" />
       </div>
 
     </div>
-    <div class="gc-footer">
 
-      <div class="gc-left-section">
-        <div class="gc-content">
-          <div class="gc-down-section" style="color:azure">Copyrights © 2022 All Rights Reserved by Alpha (الماس فناوری
-            ابری)
-          </div>
+    <div class="alpha-section container">
+
+      <div class="row">
+        <div class="col-lg-1 d-none d-lg-block"></div>
+        <div class="col-lg-10 col-12 info-box">
+          <h6 class="info-box-head">پیش به سوی هوشمندسازی صنایع </h6>
+          <h2 class="info-box-bold">متاورس صنعتی.</h2>
+          <h5 class="info-box-info">فالکن یک پلتفرم متاورس صنعتی است که امکان ارائه سرویس‌های دیجیتالی مورد نیاز انواع
+            صنایع را فراهم کرده است. صنایع نفت، گاز و پتروشیمی، کارخانجات تولید فولاد و استیل، معدن، کشاورزی و دامپروری
+            می‌توانند از زیرساخت فالکن در بخش‌های شبیه‌سازی، هوشمندسازی، یکپارچه‌سازی، مدیریت از راه دور فرآیندها، کاهش
+            هزینه‌ها و ریسک استفاده نمایند. دوقلوی دیجیتال یا Digital Twin برای ایجاد یک نمونه همانند از فضای فیزیکی و
+            فرآیندها و جمع‌آوری داده جهت پیش‌بینی عملکرد آنها استفاده می‌شود.</h5>
         </div>
+        <div class="col-lg-1 d-none d-lg-block"></div>
       </div>
-      <div class="gc-right-section">
-        <div class="gc-social-contents">
 
-          <a class="gc-social-icon gc-linkedin" target="_blank" href="https://www.linkedin.com/company/playpod/">
-            <i class="icon-linkedin" style="color:azure"></i>
-            <i class="icon-linkedin" style="color:azure"></i>
-          </a>
-
-          <a class="gc-social-icon gc-github" target="_blank" href="https://github.com/WolfEngine">
-            <i class="icon-github" style="color:azure"></i>
-            <i class="icon-github" style="color:azure"></i>
-          </a>
-
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <video id="industrialMetaverse" class="video-js" fluid="true" preload="auto" muted="muted" data-setup="{}">
+            <source src="video/alphaVerse.mp4" type="video/mp4" />
+          </video>
         </div>
-        <div class="gc-contact-contents">
-          <span>
-            <a href="mailto://hi@alphaco.cloud" target="_blank" style="color:azure"> hi@AlphaCo.Cloud
+        <div class="col-md-2"></div>
+      </div>
+
+    </div>
+
+    <div class="alpha-section container">
+
+      <div class="row">
+        <div class="col-lg-1 d-none d-lg-block"></div>
+        <div class="col-lg-10 col-12 info-box">
+          <h6 class="info-box-head">سرویس‌های زیرساختی، هوشمندانه تر مدیریت کنید</h6>
+          <h2 class="info-box-bold">تقسیم‌بندی توان پردازش گرافیکی </h2>
+          <h5 class="info-box-info">ابر GPU آلفا امکان مدیریت بهینه کارت های گرافیکی را در سطح دیتاسنترها ایجاد می‌کند؛
+            به نحوی که هر دو قابلیت GPUP وGPUV توسط این سرویس قابل ارائه روی هر مدل کارت گرافیکی می‌باشد. این سرویس
+            زیرساخت <a href="https://playpod.ir" target="_blank">کنسول بازی ابری پلی پاد</a> است که از سال ۱۳۹۷ توسعه
+            داده شده و اکنون به صورت B2B2C قابلیت بهره‌برداری
+            دارد. </h5>
+        </div>
+        <div class="col-lg-1 d-none d-lg-block"></div>
+      </div>
+
+      <div class="row scroll-canvas scroll-gpu-trigger">
+        <canvas id="scrollGpu" />
+      </div>
+
+    </div>
+
+    <div class="alpha-section container">
+
+      <div class="row">
+        <div class="col-lg-1 d-none d-lg-block"></div>
+        <div class="col-lg-10 col-12 info-box">
+          <h6 class="info-box-head">تجربه همزمان هیجان و لذت </h6>
+          <h2 class="info-box-bold">استریم لحظه ای امن</h2>
+          <h5 class="info-box-info">شرکت آلفا با تکیه بر دانش فنی و تکنولوژی ابری، اولین شرکت ایرانی است که مجوز استریم
+            بازی را دریافت و سرویس استریم بلادرنگ امن را فراهم کرده است. چنین قابلیتی در برگزاری و اجرای رقابت‌ها نقش
+            کلیدی ایفا می کند. علاوه بر آن، شرکت آلفا مجوز پخش زنده نمایش خانگی تخصصی در حوزه بازی‌های ویدئویی را هم کسب
+            کرده و گیمرها می‌توانند محتوای دلخواهشان را از این بستر تماشا و یا به اشتراک بگذارند.</h5>
+        </div>
+        <div class="col-lg-1 d-none d-lg-block"></div>
+      </div>
+
+      <div class="row ">
+        <img src="img/secure-realtime.jpg" alt="" loading="lazy">
+      </div>
+
+    </div>
+
+    <div class="alpha-section container">
+      <div class="row">
+        <div class="col-lg-1 d-none d-lg-block"></div>
+        <div class="col-lg-10 col-12 info-box">
+          <h6 class="info-box-head">بازی یک سبک زندگی</h6>
+          <h2 class="info-box-bold">بازی به عنوان یک سرویس</h2>
+          <h5 class="info-box-info">شرکت آلفا، بازی به عنوان سرویس (GaaS) را در سبد فعالیت‌های خود قرار داده است، به
+            عبارت ساده تر امکانات، محتوا و بازی‌های کنسول بازی ابری <a href="https://playpod.ir" target="_blank">پلی
+              پاد</a> به صورت منظم و مستمر بروزرسانی می‌شوند.
+            کاربران صرفاً با تهیه اشتراک ماهانه پلی پرو می‌توانند از تمامی این امکانات و محتوا استفاده کنند. علاوه بر
+            آن، تعامل بین بازیکنان در این مدل کسب‌وکاری در نظر گرفته شده و گیمرها می‌توانند در بازی‌های چندنفره آنلاین و
+            زنده با هم به رقابت بپردازند.</h5>
+        </div>
+        <div class="col-lg-1 d-none d-lg-block"></div>
+      </div>
+
+      <div class="row ">
+        <img src="img/1-alpha-landing-gaas-final 1.jpg" alt="" loading="lazy">
+      </div>
+
+    </div>
+
+    <div class="alpha-section container">
+
+      <div class="row">
+        <div class="col-lg-1 d-none d-lg-block"></div>
+        <div class="col-lg-10 col-12 info-box">
+          <h6 class="info-box-head">عصر جدید بازی های ویدیویی</h6>
+          <h2 class="info-box-bold">بازی ابری</h2>
+          <h5 class="info-box-info"><a href="https://playpod.ir" target="_blank">کنسول بازی ابری پلی پاد</a> پلتفرم
+            نسل نوین بازی و سرگرمی است که در آن بازی‌ها بدون
+            نیاز به دانلود، نصب و سخت‌افزار کامپیوتری گران‌ قیمت در اختیار علاقه‌‌مندان قرار گرفته‌اند.
+            کاربر به کمک این سرویس می‌تواند بازی‌های روز دنیا را تنها از طریق اینترنت روی تلویزیون، لپ‌تاپ، تبلت یا حتی
+            سیستم قدیمی بدون کارت گرافیک اجرا نماید.</h5>
+        </div>
+        <div class="col-lg-1 d-none d-lg-block"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <video id="cloudGaming" class="video-js" fluid="true" preload="auto" muted="muted" data-setup="{}">
+            <source src="video/cloud_gaming.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- Footer -->
+  <div class="alpha-footer container" id="Contact">
+    <div class="row footer-header d-flex justify-content-between">
+      <div class="alpha-language-dropdown d-flex col-11 col-sm-5 col-lg-3">
+        <i class="alpha-icon ari-subway-world-light">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+            <path
+              d="M14.9772 6.92546C15.0397 6.92546 15.1178 6.95671 15.1855 7.05046C14.8835 6.61816 15.5241 6.80566 15.5605 6.39421C15.9251 6.12337 15.7949 5.94629 15.8991 5.93587L16.0137 5.84212C15.7897 5.92546 15.7116 5.94108 15.6491 5.94108H15.5449C15.4668 5.94108 15.3366 5.95671 15.0293 6.05046C14.3262 6.10254 13.821 6.86296 13.5814 6.88379C13.3366 7.014 13.347 7.04004 13.4043 7.04004C13.4199 7.04004 13.4408 7.03483 13.4616 7.03483C13.4824 7.03483 13.498 7.02962 13.5137 7.02962C13.571 7.02962 13.5553 7.05566 13.222 7.21191C13.3001 7.23275 12.6387 7.52441 12.6335 7.98275C12.6126 8.15983 12.6855 8.27962 12.8053 8.27962C12.9095 8.27962 13.0397 8.2015 13.1803 8.00358C13.6491 7.46191 14.6387 7.40983 15.0658 7.08171C14.8001 7.06087 14.8522 6.92546 14.9772 6.92546ZM12.597 7.10775C12.5501 7.10775 12.6126 7.05046 12.6803 6.99316C12.7533 6.93587 12.8366 6.87858 12.8366 6.87858L12.8314 6.88379C13.1126 6.77441 12.9408 6.74837 13.0918 6.67546H13.0814C13.0501 6.67546 13.1074 6.63379 13.1595 6.58691C13.2116 6.54525 13.2585 6.49837 13.2116 6.49837C13.1855 6.49837 13.1178 6.514 13.0033 6.56087C13.0397 6.50879 13.1803 6.47233 13.3783 6.36296C13.0918 6.45671 12.8678 6.514 12.8418 6.514C12.821 6.514 12.9408 6.47233 13.3001 6.36296C13.3158 6.36296 13.3314 6.36816 13.3418 6.36816C13.3783 6.36816 13.3939 6.35775 13.3887 6.34733C13.3835 6.33691 13.3626 6.33171 13.3262 6.33171C12.8105 6.37337 12.4251 6.69629 12.5397 6.73796C12.6074 6.71712 12.6543 6.70671 12.6855 6.70671C12.7533 6.70671 12.722 6.764 12.5866 6.84733C12.6491 6.99316 11.5449 7.36816 11.4199 7.50358C11.4824 7.46712 11.5241 7.45671 11.5449 7.45671C11.6283 7.45671 11.5189 7.61816 11.4095 7.69629C11.4772 7.75879 11.5293 7.77962 11.571 7.77962C11.6803 7.77962 11.7272 7.62858 11.821 7.58171C11.8418 7.62337 11.8626 7.64421 11.8887 7.64421C11.9772 7.64421 12.0866 7.42546 12.1751 7.31087C12.2012 7.33691 12.2324 7.35775 12.2741 7.35775C12.3574 7.35775 12.4824 7.29004 12.6803 7.09733C12.6387 7.10254 12.6074 7.10775 12.597 7.10775ZM11.3991 8.06608C11.2116 8.18066 11.1126 8.22754 11.071 8.22754C10.9928 8.22754 11.097 8.08171 11.1908 7.93066C11.2845 7.78483 11.3678 7.639 11.248 7.639C11.1908 7.639 11.0866 7.67025 10.9199 7.75358C10.4668 8.05566 9.70117 8.889 9.36263 8.889H9.33138C9.87826 8.48796 9.7168 7.7015 10.4824 7.49837C11.2376 7.06608 11.7533 7.2015 12.4251 6.70671C12.2272 6.80566 11.9355 6.91504 11.8678 6.91504C11.8262 6.91504 11.8887 6.86296 12.1595 6.73275C12.1335 6.73796 12.1126 6.74316 12.097 6.74316C11.9147 6.74316 13.2949 6.24837 13.3626 6.23796C12.7949 6.31608 11.8783 6.79004 11.7533 6.79004C11.7376 6.79004 11.7376 6.78483 11.7376 6.77441C11.7585 6.75879 11.7585 6.74837 11.7376 6.74837C11.6699 6.74837 11.3887 6.84212 11.1022 6.93587C10.821 7.02962 10.5345 7.12858 10.472 7.12858C10.4512 7.12858 10.4512 7.11816 10.4824 7.09733C8.02409 8.49316 5.97201 10.8473 5.33138 13.639C5.59701 14.2484 5.41471 15.4098 5.85221 15.7484C6.35221 16.1702 5.42513 17.3942 5.66992 18.1494C5.91992 19.514 6.99805 20.4463 7.11263 21.8421C7.31055 22.8005 8.03451 23.9723 8.33659 24.5817C8.56576 24.8109 9.19596 25.4723 9.30534 25.4723C9.34701 25.4723 9.32096 25.3734 9.1543 25.1077C9.05013 24.8109 8.44596 24.0348 8.73763 24.0348C8.75326 24.0348 8.76888 24.0348 8.78971 24.04C8.43034 23.6755 9.58659 23.7744 8.7793 23.2796C8.68555 23.165 8.66471 23.1286 8.68555 23.1286C8.71159 23.1286 8.78451 23.1702 8.86784 23.2119C8.95638 23.2536 9.06055 23.2952 9.14388 23.2952C9.27409 23.2952 9.36263 23.2067 9.31055 22.8838C9.33138 22.8942 9.35221 22.8942 9.36784 22.8942C9.50326 22.8942 9.45638 22.6286 9.4668 22.363C9.47721 22.0973 9.54492 21.8317 9.90951 21.8317C9.95117 21.8317 9.99805 21.8369 10.0449 21.8421C10.8887 21.3838 10.1543 20.1182 11.123 19.6546C11.0866 18.6025 9.67513 18.5505 9.14388 18.1234C9.05534 18.1755 8.97201 18.1911 8.88867 18.1911C8.79492 18.1911 8.71159 18.1702 8.63867 18.1442C8.56576 18.1234 8.49805 18.0973 8.45117 18.0973C8.44076 18.0973 8.43034 18.0973 8.41992 18.1025C9.32617 17.863 8.66471 16.6025 7.91471 16.6025H7.86263C7.80534 16.0557 7.52409 16.264 7.49284 15.8109C7.44596 15.8369 7.39909 15.8473 7.35221 15.8473C7.22721 15.8473 7.11263 15.7588 7.01367 15.6755C6.91471 15.5869 6.83138 15.5036 6.75846 15.5036C6.70117 15.5036 6.64909 15.5609 6.60221 15.7275C6.6543 15.4723 6.63867 15.389 6.58659 15.389C6.53451 15.389 6.44076 15.4775 6.33659 15.5661C6.23763 15.6546 6.12305 15.7432 6.03451 15.7432H6.00846C5.39909 15.3109 6.01367 14.5452 5.69076 13.9567C5.89909 13.7327 5.98242 13.3525 5.88867 13.3525C5.8418 13.3525 5.74805 13.4463 5.60221 13.7015C5.39388 13.1702 5.94596 11.9671 6.41471 11.8994C6.43034 11.8994 6.44076 11.8942 6.45638 11.8942C6.53971 11.8942 6.62305 11.9359 6.69596 12.0244C6.73763 12.2692 6.63346 12.7848 6.67513 12.7848C6.69596 12.7848 6.73763 12.6807 6.8418 12.4098C6.97721 11.79 7.92513 11.3421 8.02409 10.9619C8.0293 10.9671 8.0293 10.9671 8.03451 10.9671C8.14388 10.9671 8.84701 10.3473 9.1543 10.2796C9.27409 10.1598 9.35742 10.1182 9.41992 10.1182C9.48763 10.1182 9.52409 10.1702 9.55013 10.2171C9.57617 10.2692 9.59701 10.3161 9.62305 10.3161C9.64388 10.3161 9.66992 10.2848 9.7168 10.1963C9.55534 9.87858 9.97201 9.5765 9.85742 9.5765C9.81576 9.5765 9.69076 9.61816 9.43555 9.72233C9.39388 9.74316 9.37305 9.74837 9.36263 9.74837C9.33138 9.74837 9.45638 9.66504 9.63867 9.58171C9.82096 9.49837 10.0501 9.41504 10.2428 9.41504C10.3366 9.41504 10.4199 9.43587 10.4824 9.48796C11.2897 9.29525 10.847 9.02962 10.8887 9.02962H10.8991C11.1283 8.89421 11.0605 8.38379 11.3991 8.06608ZM7.78971 10.1963C7.7793 10.1963 7.82617 10.1286 7.98242 9.93587C8.30534 9.69629 8.56576 9.53483 8.26888 9.37858C8.39909 9.32129 8.52409 9.25358 8.64388 9.18066C8.63867 9.43587 8.42513 10.0557 8.31055 10.0557C8.28451 10.0557 8.25846 10.0192 8.24805 9.94108C8.31576 9.82129 8.32096 9.77441 8.29492 9.77441C8.25326 9.77441 8.13346 9.87858 8.01888 9.98796C7.9043 10.0869 7.80013 10.1963 7.78971 10.1963ZM8.08659 10.3369C7.94596 10.3369 7.97201 10.2484 8.4043 10.1598C8.5918 10.1338 8.44596 10.1442 8.66992 10.0921C8.45117 10.2692 8.20638 10.3369 8.08659 10.3369ZM16.1855 9.81087C16.248 9.80046 16.2949 9.80046 16.3314 9.80046C16.4824 9.80046 16.4147 9.86296 16.3262 9.92546C16.2376 9.98796 16.1283 10.0505 16.1908 10.0505C16.2272 10.0505 16.3262 10.0296 16.5293 9.97233C17.5553 9.89941 16.1283 9.02962 16.3574 8.73796L16.2949 8.71712C15.873 9.25358 16.5762 9.264 16.1855 9.81087ZM15.7585 9.83171C15.8314 9.83171 15.9251 9.74837 16.0241 9.514C16.1595 9.35254 16.1022 9.33171 15.9564 9.25358C15.5553 9.35775 15.5918 9.83171 15.7585 9.83171ZM19.3522 11.4827C19.3366 11.4827 19.3262 11.488 19.3158 11.4932C19.3574 11.5036 19.3991 11.514 19.4408 11.514C19.3991 11.4932 19.373 11.4827 19.3522 11.4827ZM26.347 12.7796C26.4355 12.9723 26.4824 13.0505 26.4876 13.0505C26.5241 13.0505 25.8314 11.363 25.5449 11.0609C24.0501 8.60254 21.5918 6.72233 18.7897 6.01921H18.7845C18.7116 6.01921 18.7949 6.05566 18.8939 6.09212C18.9928 6.12858 19.1126 6.16504 19.1126 6.16504C19.1126 6.16504 19.0345 6.139 18.7949 6.07129C18.5293 5.99316 18.2585 5.93587 17.9824 5.91504C17.9355 5.93066 19.123 6.39941 19.9199 6.64421C19.6543 6.56087 19.3783 6.48796 19.3105 6.48796C19.2637 6.48796 19.3105 6.51921 19.5033 6.60254C19.2689 6.53483 19.1699 6.50358 19.1595 6.50358C19.1439 6.50358 19.472 6.61296 19.7793 6.72233C20.0918 6.83171 20.3887 6.94108 20.3053 6.94108C20.2845 6.94108 20.2272 6.93066 20.1387 6.91504C20.4043 7.06087 20.498 7.11816 20.4824 7.11816C20.4564 7.11816 20.1283 6.96191 19.7897 6.80566C19.4564 6.64941 19.1178 6.49316 19.071 6.49316C19.0449 6.49316 19.1126 6.54525 19.3418 6.68066C19.6543 6.81608 19.9668 6.9515 19.8783 6.9515C19.8366 6.9515 19.7168 6.92546 19.4824 6.85775C20.0033 7.12337 19.1126 7.01921 19.4147 7.37858C19.248 7.22233 19.1803 7.17025 19.1647 7.17025C19.1491 7.17025 19.1908 7.23275 19.2324 7.29525C19.2741 7.35775 19.3053 7.42025 19.2689 7.42025H19.2585C19.623 7.81608 19.0033 7.46191 19.446 7.81608C19.1126 7.66504 18.5449 7.41504 18.8001 7.41504C18.8626 7.41504 18.9824 7.43066 19.1699 7.47233C18.8314 7.0765 17.873 7.06087 17.8522 7.014C17.6126 7.02962 17.6074 7.21191 17.6491 7.54525C17.6439 8.07129 17.1283 8.08171 17.196 8.38379C17.196 8.37858 17.2012 8.37858 17.2012 8.37858C17.2116 8.37858 17.2168 8.48275 17.248 8.59212C17.2845 8.69629 17.347 8.80566 17.4824 8.80566C17.5553 8.80566 17.6491 8.77441 17.7637 8.69629C17.9251 8.98796 18.071 9.09212 18.1855 9.09212C18.3574 9.09212 18.4616 8.85775 18.4512 8.64421C18.2637 8.54004 18.0189 7.67546 18.2897 7.67546C18.3314 7.67546 18.3835 7.69629 18.4512 7.74316C18.0293 8.77962 20.1178 8.08691 18.9355 8.56087C19.2012 8.90983 18.7689 8.89421 18.8939 9.31608C18.6908 9.37337 18.4668 9.42546 18.2689 9.42546C17.9772 9.42546 17.7533 9.30046 17.7793 8.86296C17.4147 9.05566 18.1439 9.70671 17.4199 9.70671H17.3783C17.0293 10.3473 15.722 10.1286 16.748 10.8057C16.8053 11.1025 16.6178 11.1546 16.3783 11.1546C16.3158 11.1546 16.248 11.1494 16.1803 11.1442C16.1126 11.139 16.0449 11.139 15.9824 11.139C15.7116 11.139 15.5189 11.2067 15.6855 11.6286C15.5658 12.0661 15.847 12.2588 16.1908 12.2588C16.6074 12.2588 17.1178 11.988 17.1543 11.54C17.3783 11.2015 17.6647 11.0609 17.9616 11.0609C18.4303 11.0609 18.9251 11.415 19.248 11.8525C19.2741 11.8942 19.2949 11.9098 19.3053 11.9098C19.3314 11.9098 19.3053 11.8057 19.2949 11.7015C19.2845 11.6182 19.2845 11.5348 19.3158 11.5088C18.8522 11.3786 18.498 10.8161 18.6543 10.8161C18.7064 10.8161 18.8158 10.8786 18.9928 11.0452H19.0189C19.3105 11.0452 19.5397 11.2744 19.7168 11.5036C19.8991 11.7327 20.0345 11.9619 20.1543 11.9619C20.2012 11.9619 20.248 11.9202 20.2897 11.8265C20.2689 11.7952 20.2168 11.7067 20.1908 11.6182C20.1595 11.5088 20.1595 11.3994 20.3001 11.3994C20.3574 11.3994 20.4355 11.4202 20.5449 11.4619C20.8991 11.3682 20.321 10.4463 20.7897 10.4463C20.8366 10.4463 20.8939 10.4567 20.9668 10.4775C20.9616 10.639 21.0345 10.6963 21.1022 10.6963C21.2376 10.6963 21.373 10.5036 21.0449 10.4463C21.1699 10.3265 21.2428 10.2796 21.2949 10.2796C21.4772 10.2796 21.3314 10.8838 21.9616 10.8838C22.1751 11.389 20.1074 10.9202 20.7689 11.889C20.9199 11.9984 21.1074 12.0192 21.2897 12.0192C21.347 12.0192 21.3991 12.0192 21.4512 12.014C21.5033 12.014 21.5553 12.0088 21.6022 12.0088C21.9251 12.0088 22.1543 12.0869 22.0137 12.7536C21.8418 12.8786 21.6491 12.9202 21.4512 12.9202C21.2741 12.9202 21.097 12.889 20.9251 12.8577C20.7533 12.8265 20.5866 12.7952 20.4355 12.7952C20.2012 12.7952 20.0137 12.8734 19.8991 13.1442C19.2897 12.8942 18.4876 12.8838 18.5658 12.1286C17.5033 12.2796 16.3939 12.2015 15.6126 12.8525C15.5658 13.8057 13.9303 14.113 14.3262 15.1963C13.8522 16.1963 14.8991 17.5973 15.9668 17.5973C16.0033 17.5973 16.0449 17.5973 16.0814 17.5921C16.6647 17.5869 17.2533 17.3265 17.7689 17.3265C18.0345 17.3265 18.2741 17.3942 18.4824 17.6025C18.5293 17.5973 18.571 17.5921 18.6074 17.5921C19.4043 17.5921 18.3522 18.8577 19.3053 19.0713C20.1699 19.9671 18.7741 20.889 19.4564 21.7484C19.5293 22.4202 19.8626 22.9827 19.8626 23.639C19.9512 23.6494 20.0345 23.6546 20.123 23.6546C21.222 23.6546 21.9095 22.6963 22.5553 21.9723C22.3574 20.889 24.0918 20.6755 23.498 19.4619C23.222 18.1338 24.8053 17.3473 24.7168 16.0192C24.7324 15.8317 24.6803 15.7744 24.6022 15.7744C24.5241 15.7744 24.4095 15.8317 24.3001 15.8838C24.1855 15.9411 24.0605 15.9932 23.9616 15.9932C23.8314 15.9932 23.7324 15.9046 23.722 15.613C22.9564 14.8994 22.6074 13.9307 21.8939 13.1442C22.821 13.5921 23.347 14.6025 23.7741 15.5192C23.8105 15.5296 23.847 15.5348 23.8887 15.5348C24.6439 15.5348 25.696 13.7275 24.5501 13.29C24.4876 13.4619 24.4043 13.5244 24.3053 13.5244C24.1335 13.5244 23.9355 13.3161 23.7949 13.113C23.6543 12.9046 23.5814 12.6963 23.6595 12.6963C23.7116 12.6963 23.8262 12.7796 24.0241 12.9984C24.248 13.139 24.4668 13.1755 24.696 13.1755C24.9199 13.1755 25.1491 13.139 25.3887 13.1182C25.6908 13.238 25.821 13.6234 25.9147 13.6234C25.9303 13.6234 25.9512 13.6077 25.9668 13.5713C26.2064 14.1442 26.4824 15.165 26.7324 15.4411C26.6022 14.5661 26.571 13.639 26.347 12.7796ZM23.4408 11.5765C22.8522 11.4255 22.6595 10.6963 22.196 10.2744C22.1908 10.1598 22.3626 10.1807 22.321 9.98796C22.946 10.1807 22.7428 10.3734 22.6855 10.4098C22.9147 10.79 23.5553 11.0505 23.4408 11.5765ZM15.3522 7.61296C14.7845 7.77962 14.7064 7.59733 14.8053 7.94629C14.847 7.97754 14.9251 7.98796 15.0033 7.98796C15.2793 7.99316 15.6543 7.83171 15.3522 7.61296ZM23.6908 21.9619C24.4355 21.3317 24.5293 20.5817 24.5658 19.8213C24.2324 20.4723 23.2428 21.1911 23.6908 21.9619ZM20.3001 11.8057C20.2949 11.8109 20.2949 11.8109 20.2949 11.8161C20.3001 11.8265 20.3053 11.8265 20.3053 11.8265C20.3053 11.8265 20.3053 11.8213 20.3001 11.8057ZM16.0033 3.50879C8.63867 3.50879 2.66992 9.47754 2.66992 16.8421C2.66992 24.2067 8.63867 30.1755 16.0033 30.1755C23.3678 30.1755 29.3366 24.2067 29.3366 16.8421C29.3366 9.47754 23.3678 3.50879 16.0033 3.50879ZM16.0033 29.1494C9.20638 29.1494 3.69596 23.639 3.69596 16.8421C3.69596 10.0452 9.20638 4.53483 16.0033 4.53483C22.8001 4.53483 28.3105 10.0452 28.3105 16.8421C28.3105 23.639 22.8001 29.1494 16.0033 29.1494Z"
+              fill="white" />
+          </svg>
+        </i>
+
+        <select class="form-select bg-black text-light" aria-label="Default select example">
+          <!-- <option value="1">English (En)</option> -->
+          <option selected value="2">فارسی (Fa)</option>
+        </select>
+      </div>
+
+      <div role="button" class="alpha-go-top d-flex col-1 justify-content-end" onclick="goTopScroll()">
+        <i class="alpha-icon ari-go-top-light pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M28.0033 16.8421C28.0033 10.1755 22.6699 4.84212 16.0033 4.84212C9.33659 4.84212 4.00326 10.1755 4.00326 16.8421C4.13659 23.3755 9.46992 28.7088 16.0033 28.8421C22.5366 28.7088 27.8699 23.3755 28.0033 16.8421ZM2.66992 16.8421C2.66992 9.50879 8.66992 3.50879 16.0033 3.50879C23.3366 3.50879 29.3366 9.50879 29.3366 16.8421C29.2033 24.1755 23.3366 30.0421 16.0033 30.1755C8.66992 30.0421 2.80326 24.1755 2.66992 16.8421ZM25.0699 22.1088C25.1699 22.1421 25.2699 22.1755 25.3366 22.1755C25.4699 22.1755 25.7366 22.0421 25.8699 21.9088C26.1366 21.6421 26.1366 21.2421 25.8699 20.9755L16.5366 11.6421C16.2699 11.3755 15.8699 11.3755 15.6033 11.6421L6.26992 20.9755C6.00325 21.2421 6.00325 21.6421 6.26992 21.9088C6.53659 22.1755 6.93659 22.1755 7.20326 21.9088L16.0033 13.1088L24.8033 22.0421C24.8699 22.0421 24.9699 22.0755 25.0699 22.1088Z"
+              fill="white" />
+          </svg>
+        </i>
+      </div>
+    </div>
+    <div class="row footer-body text-light">
+      <div class="col-12 col-sm-5 col-lg-5 alpha-footer-box order-3 order-sm-1">
+        <h5 class="h5 alpha-footer-nav-header">درباره ما</h5>
+        <p class="alpha-paragraph">
+          شرکت فناور و دانش بنیان سطح یک آلفا در حوزه های سرویس دهی کارت گرافیکی ابری، استریم امن بلادرنگ، برنامه های
+          مبتنی بر متاورس، دوقلوهای دیجیتال، راه کارهای ابری واقعیت مجازی/افزوده و پلتفرم های بازی ابری سرویس دهی میکند.
+          این شرکت از سال ۱۴۰۰ تأسیس شد و در خط مقدم انقلاب ابری سرویس های مبتنی بر کارت گرافیکی، بازی و هوش مصنوعی
+          مشغول فعالیت است.
+        </p>
+      </div>
+
+      <div class="d-none d-sm-block col-sm-2 col-lg-4 alpha-footer-box order-2 ">
+      </div>
+
+      <div class="col-12 col-sm-5 col-lg-3 alpha-footer-box order-1 order-sm-3">
+        <h5 class="h5 alpha-footer-nav-header">ما را دنبال کنید</h5>
+        <ul class="nav social-nav flex-row">
+          <li class="nav-item">
+            <a type="button" class="alpha-nav-link-icon position-relative d-flex align-self-center"
+              href="https://www.linkedin.com/company/alphaco-cloud" target="_blank">
+              <img src="img/icons/white/ari-social-linkedin.svg" class="align-self-center" />
             </a>
-          </span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="gc-orientation-message">
-    <div class="gc-inner-content">
-      <div class="gc-image-content">
-        <img src="./res/img/wolf.svg">
-      </div>
-      <div class="gc-text-content">
-        please rotate your device!
+          </li>
+          <li class="nav-item ">
+            <a type="button" class="alpha-nav-link-icon position-relative d-flex align-self-center"
+              href="https://www.instagram.com/alphaco_cloud" target="_blank">
+              <img src="img/icons/white/ari-social-instagram.svg" class="align-self-center" />
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
 
-  <div class="gc-loading-content">
-    <div class="gc-inner-content">
-      <img src="./res/mov/loading.gif">
+  </div>
+  <div class="row footer-copyright text-gray">
+    <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center mb-2">
+      <div class="d-none d-lg-flex"></div>
+      <div class="h6 m-auto m-sm-0">حقوق مادی و معنوی این وبسایت برای آلفا محفوظ میباشد.(۱.۲.۴)</div>
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand  d-flex" href="#">
+          <img src="img/logo2.svg" alt="alpha Logo" loading="lazy" />
+        </a>
+        <span class="d-none d-sm-block"><a href="mailto:hi.alphaco.cloud" target="_blank">نماس با
+            ما</a></span></span>
+      </div>
     </div>
   </div>
-
-  <div class="gc-stream-container">
-
-    <div class="gc-inner-content">
-      <div class="gc-header">
-        <div class="gc-close-content"></div>
-      </div>
-      <div class="gc-content">
-
-      </div>
-      <div class="gc-footer"></div>
-    </div>
   </div>
 
-  <div class="gc-snack-bar">
-    <div class="gc-text"></div>
+  <div class="scroll-animation-mouse">
+    <img src="img/mouse-gif.gif" alt="">
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.11.1/video.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.js"></script>
+  <script src="js/app.js"></script>
 </body>
-<script>
-  new App();
-</script>
 
 </html>

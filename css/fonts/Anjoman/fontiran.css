@@ -1,0 +1,93 @@
+/**
+*
+*	Name:			AnjomanMax Fonts
+*	Version:			2.4
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Apr 22, 2021
+*	Updated on:		Jan 22, 2022
+*	Website:			http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+فونتایران سنس Xا یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+AnjomanMax fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com 
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+------------------------------------------------------------------------------------- -
+*	
+**/
+
+
+@font-face {
+	font-family: AnjomanMax;
+	font-style: normal;
+	font-weight: 100;
+	src: url('woff/AnjomanMax-Thin.woff') format('woff'),   
+	url('woff2/AnjomanMax-Thin.woff2') format('woff2');		
+}
+
+@font-face {
+	font-family: AnjomanMax;
+	font-style: normal;
+	font-weight: 200;
+	src: url('woff/AnjomanMax-ExtraLight.woff') format('woff'),   
+	url('woff2/AnjomanMax-ExtraLight.woff2') format('woff2');	
+}
+
+@font-face {
+	font-family: AnjomanMax;
+	font-style: normal;
+	font-weight: 300;
+	src: url('woff/AnjomanMax-Light.woff') format('woff'),   
+	url('woff2/AnjomanMax-Light.woff2') format('woff2');		 
+}
+
+@font-face {
+	font-family: AnjomanMax;
+	font-style: normal;
+	font-weight: 500;
+	src: url('woff/AnjomanMax-Medium.woff') format('woff'),   
+	url('woff2/AnjomanMax-Medium.woff2') format('woff2');		 
+}
+
+@font-face {
+	font-family: AnjomanMax;
+	font-style: normal;
+	font-weight: 600;
+	src: url('woff/AnjomanMax-SemiBold.woff') format('woff'),   
+	url('woff2/AnjomanMax-SemiBold.woff2') format('woff2');	 
+}
+
+@font-face {
+	font-family: AnjomanMax;
+	font-style: normal;
+	font-weight: 800;
+	src: url('woff/AnjomanMax-ExtraBold.woff') format('woff'),   
+	url('woff2/AnjomanMax-ExtraBold.woff2') format('woff2');		 
+}
+
+@font-face {
+	font-family: AnjomanMax;
+	font-style: normal;
+	font-weight: 900;
+	src: url('woff/AnjomanMax-Black.woff') format('woff'),   
+	url('woff2/AnjomanMax-Black.woff2') format('woff2');		 
+}
+
+@font-face {
+	font-family: AnjomanMax;
+	font-style: normal;
+	font-weight: bold;
+	src: url('woff/AnjomanMax-Bold.woff') format('woff'),   
+	url('woff2/AnjomanMax-Bold.woff2') format('woff2');	 
+}
+
+@font-face {
+	font-family: AnjomanMax;
+	font-style: normal;
+	font-weight: normal;
+	src: url('woff/AnjomanMax-Regular.woff') format('woff'),   
+	url('woff2/AnjomanMax-Regular.woff2') format('woff2');	
+}
+
+
