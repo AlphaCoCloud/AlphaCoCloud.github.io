@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: 
 Disallow: /private/
 Sitemap: https://alphaco.cloud/sitemap.xml
